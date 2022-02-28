@@ -26,7 +26,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active">
+            <li>
               <a href="calendar.html">Calender</a>
             </li>
             <li>
@@ -38,7 +38,7 @@
             <li>
               <a href="lunches.html">Lunches</a>
             </li>
-            <li>
+            <li class="active">
               <a href="scheduling.html">Scheduling</a>
             </li>
           </ul>
@@ -50,9 +50,9 @@
         <div class="row">
           <div class="col-md-12">
             <div class="page-header">
-              <h1>Calendar
+              <h1>Schedule Generator&nbsp;
                 <font color="#777777">
-                  <span style="font-size: 23.3999996185303px; line-height: 23.3999996185303px;">Choose which month you'd like to view!</span>
+                  <span style="font-size: 23.3999996185303px; line-height: 23.3999996185303px;">Tap on an option to generate a schedule.</span>
                 </font>
               </h1>
             </div>
@@ -75,79 +75,87 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <img src="..\media\august.png" class="img-responsive" id="calimage">
+            <img src="..\media\blank.png" class="img-responsive" id="calimage">
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
             <ul class="pagination">
               <li>
-                <a href="#" id="august">August</a>
+                <a href="#" id="fullday">Full Day</a>
               </li>
               <li>
-                <a href="#" id="september">September</a>
-              </li>
-              <li>
-                <a href="#" id="october">October</a>
-              </li>
-              <li>
-                <a href="#" id="november">November</a>
-              </li>
-              <li>
-                <a href="#" id="december">December</a>
-              </li>
-              <li>
-                <a href="#" id="january">January</a>
-              </li>
-              <li>
-                <a href="#" id="february">February</a>
-              </li>
-              <li>
-                <a href="#" id="march">March</a>
-              </li>
-              <li>
-                <a href="#" id="april">April</a>
-              </li>
-              <li>
-                <a href="#" id="may">May</a>
+                <a href="#" id="earlyout">1 Hour Early Out</a>
               </li>
             </ul>
           </div>
         </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-header">
+              <h1>"Which lunch period am I?"
+                <font color="#777777">
+                  <span style="font-size: 23.3999996185303px; line-height: 23.3999996185303px;">Tap on a lunch period to view the classrooms it covers.</span>
+                </font>
+              </h1>
+            </div>
+          </div>
+          <div class="section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <img src="..\media\blank.png" class="img-responsive" id="periodimage">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" id="1">1st Lunch</a>
+                    </li>
+                    <li>
+                      <a href="#" id="2">2nd Lunch</a>
+                    </li>
+                    <li>
+                      <a href="#" id="3">3rd Lunch</a>
+                    </li>
+                    <li>
+                      <a href="#" id="4">4th Lunch</a>
+                    </li>
+                    <li>
+                      <a href="#" id="5">5th Lunch</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            document.getElementById('fullday').onclick = function () {
+                                      		document.getElementById("calimage").src="../media/fullday.png";
+                                      	}
+                                            document.getElementById('earlyout').onclick = function () {
+                                      		document.getElementById("calimage").src="../media/earlyout.png";
+                                      	}
+                                            document.getElementById('1').onclick = function () {
+                                      		document.getElementById("periodimage").src="../media/1stlunch.png";
+                                      	}
+                                            document.getElementById('2').onclick = function () {
+                                      		document.getElementById("periodimage").src="../media/2ndlunch.png";
+                                      	}
+                                            document.getElementById('3').onclick = function () {
+                                      		document.getElementById("periodimage").src="../media/3rdlunch.png";
+                                      	}
+                                            document.getElementById('4').onclick = function () {
+                                      		document.getElementById("periodimage").src="../media/4thlunch.png";
+                                      	}
+                                            document.getElementById('5').onclick = function () {
+                                      		document.getElementById("periodimage").src="../media/5thlunch.png";
+                                      	}
+          </script>
+        </div>
       </div>
     </div>
-    <script>
-      document.getElementById('august').onclick = function () {
-                                		document.getElementById("calimage").src="../media/august.png";
-                                	}
-                                      document.getElementById('september').onclick = function () {
-                                		document.getElementById("calimage").src="../media/september.png";
-                                	}
-                                      document.getElementById('october').onclick = function () {
-                                		document.getElementById("calimage").src="../media/october.png";
-                                	}
-                                      document.getElementById('november').onclick = function () {
-                                		document.getElementById("calimage").src="../media/november.png";
-                                	}
-                                      document.getElementById('december').onclick = function () {
-                                		document.getElementById("calimage").src="../media/december.png";
-                                	}
-                                      document.getElementById('january').onclick = function () {
-                                		document.getElementById("calimage").src="../media/january.png";
-                                	}
-                                      document.getElementById('february').onclick = function () {
-                                		document.getElementById("calimage").src="../media/february.png";
-                                	}
-                                      document.getElementById('march').onclick = function () {
-                                		document.getElementById("calimage").src="../media/march.png";
-                                	}
-                                      document.getElementById('april').onclick = function () {
-                                		document.getElementById("calimage").src="../media/april.png";
-                                	}
-                                      document.getElementById('may').onclick = function () {
-                                		document.getElementById("calimage").src="../media/may.png";
-                                	}
-    </script>
   
 
 </body></html>

@@ -26,7 +26,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active">
+            <li>
               <a href="calendar.html">Calender</a>
             </li>
             <li>
@@ -35,7 +35,7 @@
             <li>
               <a href="clubs.html">Clubs &amp; Extracurriculars</a>
             </li>
-            <li>
+            <li class="active">
               <a href="lunches.html">Lunches</a>
             </li>
             <li>
@@ -50,9 +50,9 @@
         <div class="row">
           <div class="col-md-12">
             <div class="page-header">
-              <h1>Calendar
+              <h1>Lunches
                 <font color="#777777">
-                  <span style="font-size: 23.3999996185303px; line-height: 23.3999996185303px;">Choose which month you'd like to view!</span>
+                  <span style="font-size: 23.3999996185303px; line-height: 23.3999996185303px;">Tap on a day to view the lunch menu!</span>
                 </font>
               </h1>
             </div>
@@ -75,41 +75,26 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <img src="..\media\august.png" class="img-responsive" id="calimage">
+            <img src="..\media\monday.png" class="img-responsive" id="calimage">
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
             <ul class="pagination">
               <li>
-                <a href="#" id="august">August</a>
+                <a href="#" id="monday">Monday</a>
               </li>
               <li>
-                <a href="#" id="september">September</a>
+                <a href="#" id="tuesday">Tuesday</a>
               </li>
               <li>
-                <a href="#" id="october">October</a>
+                <a href="#" id="wednesday">Wednesday</a>
               </li>
               <li>
-                <a href="#" id="november">November</a>
+                <a href="#" id="thursday">Thursday</a>
               </li>
               <li>
-                <a href="#" id="december">December</a>
-              </li>
-              <li>
-                <a href="#" id="january">January</a>
-              </li>
-              <li>
-                <a href="#" id="february">February</a>
-              </li>
-              <li>
-                <a href="#" id="march">March</a>
-              </li>
-              <li>
-                <a href="#" id="april">April</a>
-              </li>
-              <li>
-                <a href="#" id="may">May</a>
+                <a href="#" id="friday">Friday</a>
               </li>
             </ul>
           </div>
@@ -117,35 +102,20 @@
       </div>
     </div>
     <script>
-      document.getElementById('august').onclick = function () {
-                                		document.getElementById("calimage").src="../media/august.png";
+      document.getElementById('monday').onclick = function () {
+                                		document.getElementById("calimage").src="../media/monday.png";
                                 	}
-                                      document.getElementById('september').onclick = function () {
-                                		document.getElementById("calimage").src="../media/september.png";
+                                      document.getElementById('tuesday').onclick = function () {
+                                		document.getElementById("calimage").src="../media/tuesday.png";
                                 	}
-                                      document.getElementById('october').onclick = function () {
-                                		document.getElementById("calimage").src="../media/october.png";
+                                      document.getElementById('wednesday').onclick = function () {
+                                		document.getElementById("calimage").src="../media/wednesday.png";
                                 	}
-                                      document.getElementById('november').onclick = function () {
-                                		document.getElementById("calimage").src="../media/november.png";
+                                      document.getElementById('thursday').onclick = function () {
+                                		document.getElementById("calimage").src="../media/thursday.png";
                                 	}
-                                      document.getElementById('december').onclick = function () {
-                                		document.getElementById("calimage").src="../media/december.png";
-                                	}
-                                      document.getElementById('january').onclick = function () {
-                                		document.getElementById("calimage").src="../media/january.png";
-                                	}
-                                      document.getElementById('february').onclick = function () {
-                                		document.getElementById("calimage").src="../media/february.png";
-                                	}
-                                      document.getElementById('march').onclick = function () {
-                                		document.getElementById("calimage").src="../media/march.png";
-                                	}
-                                      document.getElementById('april').onclick = function () {
-                                		document.getElementById("calimage").src="../media/april.png";
-                                	}
-                                      document.getElementById('may').onclick = function () {
-                                		document.getElementById("calimage").src="../media/may.png";
+                                      document.getElementById('friday').onclick = function () {
+                                		document.getElementById("calimage").src="../media/friday.png";
                                 	}
     </script>
   
